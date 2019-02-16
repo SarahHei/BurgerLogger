@@ -1,7 +1,7 @@
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
+    padding: 10px;
+    margin: 10px;
+    background: lightgray;
   }
   
   .label {
@@ -9,15 +9,15 @@ li {
   }
   
   .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
+    padding: 10px;
+    margin: 10px;
+    background: green;
   }
   
   .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   h1 {
-      color: red;
+      color: blue;
   }
