@@ -1,5 +1,5 @@
 var express = require("express");
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 var router = express.Router();
 
 router.get("/", function(req, res) {
@@ -20,11 +20,11 @@ router.get("/", function(req, res) {
   
   router.put("/api/burgers/:id", function(req, res) {
     var burgerID = req.params.id;
-    var eatenOrNaw = req.body.eaten;
-    console.log(eatenOrNaw);
+    var eatenOrNot = req.body.eaten;
+    console.log(eatenOrNot);
     console.log("ID:", burgerID);
   
-    burger.update(burgerID, eatenOrNaw, function(result) {
+    burger.update(burgerID, eatenOrNot, function(result) {
       if (result.changedRows == 0) {
         return res.status(404).end();
       } else {
